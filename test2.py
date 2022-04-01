@@ -74,7 +74,7 @@ class Graph:
                     if u_component != v_component:
                         mst_weight += w
                         self.union(component_size, u_component, v_component)
-                        print("\nEdge " + str(u) + " - " + str(v) + " with weight " + str(w) + " is included in MST.")
+                        print("\nEdge " + str(u) + " - " + str(v) + " with wight " + str(w) + " is included in MST.")
 
                         num_of_components -= 1
 
@@ -86,7 +86,7 @@ class Graph:
 def getFile():
     global text
     text = []; text_str = []
-    with open("../../../Desktop/mm/l1_3.txt", "r") as file:
+    with open("l1_3.txt", "r") as file:
         lines = file.readlines()
         [text_str.append(i.replace('\n', '')) for i in lines]
     for i in range(len(text_str)):
